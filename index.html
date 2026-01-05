@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marwari  Church Mirpurkhas | Marvi Town, Mirpurkhas</title>
+  <title>Marwari Church Mirpurkhas | Marvi Town, Mirpurkhas</title>
   <style>
     body {
       margin: 0;
@@ -67,82 +67,38 @@
       border-left: 5px solid #6b8e23;
       margin: 20px 0;
     }
-  </style>
-</head>
-<body>
 
-  <header>
-    <h1>Marwari  Church Mirpurkhas</h1>
-    <p>Marvi Town, Mirpurkhas, Sindh – Pakistan</p>
-    <p><em>Founded in honor of Damji Philip (Pioneer Marwari Christian)</em></p>
-  </header>
+    /* Gallery styles */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      align-items: stretch;
+    }
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 6px;
+      background: #f3f3f3;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+      transition: transform .25s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    .gallery-item figcaption {
+      padding: 8px;
+      font-size: 0.9rem;
+      background: #fff;
+      text-align: center;
+    }
 
-  <nav>
-    <a href="#about">About Church</a>
-    <a href="#pioneer">Our Pioneer</a>
-    <a href="#legacy">Legacy & Family</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About the Church</h2>
-    <p>
-      Marwari  Church Mirpurkhas, located in Marvi Town, Mirpurkhas, is a place of worship, prayer, and fellowship for the Christian community. The church was established to serve believers from the Marwari community and beyond, nurturing faith, unity, and spiritual growth.
-    </p>
-    <p>
-      The church stands as a living testimony of faith, perseverance, and obedience to God, continuing its mission to share the Gospel and serve the local community with love and humility.
-    </p>
-  </section>
-
-  <section id="pioneer">
-    <h2>Damji Philip (1920 – 2006)</h2>
-    <div class="highlight">
-      <strong>Pioneer Marwari Christian in Sindh, Pakistan</strong>
-    </div>
-    <p>
-      Damji Philip was a prominent figure in the Christian community of Sindh, Pakistan. He is recognized as one of the earliest individuals from the Marwari community to embrace Christianity in the region. His conversion in 1940 marked a significant moment in the religious history of the Marwari people throughout Sindh province.
-    </p>
-
-    <h3>Early Life and Career</h3>
-    <p>
-      Born in 1920, Damji Philip belonged to the Marwari community, a group renowned for its deeply rooted cultural and traditional values. During the British Raj, he served in the British-era police force, a position of authority and discipline. His professional background shaped his disciplined and committed approach to community service later in life.
-    </p>
-
-    <h3>Religious Conversion and Faith</h3>
-    <p>
-      In 1940, while still in service, Damji Philip made the historic decision to embrace Christianity during a period of great social change in the Indian subcontinent. His courageous step of faith opened doors for future generations of his family and others in the Marwari community to explore and follow the Christian faith.
-    </p>
-  </section>
-
-  <section id="legacy">
-    <h2>Legacy and Family</h2>
-    <p>
-      To honor Damji Philip’s spiritual legacy and steadfast faith, his youngest son, <strong>Rev. Rajan Victor</strong>, established the Damji Philip Church in Marvi Town, Mirpurkhas. The church remains an active place of worship and a symbol of dedication to God and family heritage.
-    </p>
-    <p>
-      Damji Philip passed away in November 2006 at the age of 86. His legacy continues through his three sons: <strong>Stephen, Anthony, and Rajan Victor</strong>. His grandson <strong>Ronald</strong> continues to preserve and document the family history and the life and service of his grandfather.
-    </p>
-    <p>
-      Damji Philip is remembered as a pioneer who faithfully bridged his Marwari heritage with his Christian identity, leaving a lasting impact on generations to come.
-    </p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>
-      <strong>Marwari  Church Mirpurkhas</strong><br />
-      Marvi Town, Mirpurkhas<br />
-      Sindh, Pakistan
-    </p>
-    <p>
-      For prayer requests, fellowship, or church information, please visit us in person or contact the church leadership.
-    </p>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Marwari  Church Mirpurkhas, Mirpurkhas. All rights reserved.</p>
-    <p>"But as for me and my house, we will serve the Lord." – Joshua 24:15</p>
-  </footer>
-
-</body>
-</html>
+    /* Light
